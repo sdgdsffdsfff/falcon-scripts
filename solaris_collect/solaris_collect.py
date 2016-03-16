@@ -6,11 +6,11 @@ import requests
 import copy
 
 
-cpu_interval = 60
-push_interval = 300
+cpu_interval = 5
+push_interval = 60
 zh_decode = "gbk"
 endpoint = "YOUR_HOSTNAME"
-ignore_interface = ["Loopback","Teredo Tunneling","isatap","6TO4 Adapter"]
+ignore_interface = ["lo"]
 push_url = "http://agent_host:1988/v1/push"
 
 #######################################################
